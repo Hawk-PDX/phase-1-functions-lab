@@ -1,0 +1,36 @@
+Learning Goals
+1. Practice writing functions
+2. Explain calling functions from within other functions
+3. Practice basics of control flow and return statements
+
+# Deliverables:
+
+1. Write a function named distanceFromHqInBlocks
+
+    [] - receives input (p/u location)
+    [] - returns (number of blocks from Scuber HQ (42nd Street))
+
+2. Write a function named distanceFromHqInFeet
+    [] - takes return value from first function (start and destination blocks)
+       and uses it to create creates another function 
+       (distanceTravelledInFeet)
+    [] - returns number of feet travelled
+        - each block in Manhattan = 264 feet
+  
+3. Write a function named distanceFromHqInFeet
+    [] - takes start and destination blocks    
+    [] - returns number of feet travelled
+       
+    example data: (34, 38) 
+    example equation: (38-34)*264   
+
+4. Write function called calculatesFarePrice
+    [] - function looks like,
+        calculatesFarePrice(start, destination) {
+            //returns ride fare
+       }
+    [] - given the same start/destination arguments from previous test
+    [] - returns customer fare;
+        first 400ft = 'free'
+        between 400(>=401)-800ft = 2 cent/ft (minus 400ft from total distance)
+
