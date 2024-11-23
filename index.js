@@ -1,16 +1,17 @@
-const hqLoc = 42;
-function distanceFromHqInBlocks(cliLoc) {
-  if (cliLoc >= hqLoc) {
-    return cliLoc - hqLoc;
+const start = 42;
+function distanceFromHqInBlocks(destination) {
+  if (destination >= start) {
+    return destination - start;
   } else {
-    return hqLoc - cliLoc;
+    return start - destination;
   }
 }
-function distanceFromHqInFeet(cliLoc) {
-  if (cliLoc >= hqLoc) {
-    return (cliLoc - hqLoc) * 264;
+
+function distanceFromHqInFeet(destination) {
+  if (destination >= start) {
+    return (destination - start) * 264;
   } else {
-    return (hqLoc - cliLoc) * 264;
+    return (start - destination) * 264;
   }
 }
 
